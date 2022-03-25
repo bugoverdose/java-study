@@ -14,7 +14,7 @@ class StreamStudyTest {
     @Test
     public void 문자_길이가_12보다_큰_경우_Filter() throws Exception {
         long result = StreamStudy.countWords();
-        System.out.println("result : " + result);
+        assertThat(result).isEqualTo(1946);
     }
 
     @Test
